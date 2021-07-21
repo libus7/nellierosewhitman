@@ -1,0 +1,5 @@
+name: 'skeleton'
+type: module
+description: 'Skeleton custom functionality'
+core_version_requirement: ^8 || ^9
+package: 'Skeleton'

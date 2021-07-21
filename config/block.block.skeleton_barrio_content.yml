@@ -1,0 +1,22 @@
+uuid: 15df9f58-7ba1-408b-a964-c30e8296609f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - skeleton_barrio
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: skeleton_barrio_content
+theme: skeleton_barrio
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

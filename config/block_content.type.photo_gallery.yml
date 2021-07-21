@@ -1,0 +1,8 @@
+uuid: dbf87819-1886-415f-b625-20df78d12f10
+langcode: en
+status: true
+dependencies: {  }
+id: photo_gallery
+label: 'Photo Gallery'
+revision: 0
+description: ''

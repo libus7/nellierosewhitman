@@ -1,0 +1,9 @@
+name: aspiringweb
+recipe: drupal8
+config:
+  webroot: web
+  php: '7.4'
+tooling:
+  drush:
+    service: appserver
+    cmd: drush --root=/app/web

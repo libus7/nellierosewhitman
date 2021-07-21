@@ -1,0 +1,51 @@
+ahoyapi: v2
+commands:
+  # Deployment Comamnds
+  update:
+    usage: Update the project after a git pull
+    cmd: |
+      lando drush updb -y
+      lando composer install
+      lando drush cim -y
+      lando drush updb -y
+      lando drush cr
+
+  install:
+    usage: install the project
+    cmd: |
+      lando composer install
+      cd web && lando drush si -y --account-pass=admin
+      lando drush -y config-set "system.site" uuid a0792fbc-8388-4ac1-b045-e3f6078eb1b9
+      lando drush eval '$entity_type = "shortcut_set"; $storage_handler = \Drupal::entityTypeManager()->getStorage($entity_type); $storage_handler->delete($storage_handler->loadMultiple(\Drupal::entityQuery($entity_type)->execute()));'
+      lando drush cim -y
+
+  # Container Commands
+  ssh:
+    usage: SSH into web container
+    cmd: lando ssh
+
+  db:
+    usage: Connect to database
+    cmd: lando drush sqlc
+
+  perm:
+    usage: Set proper permissions on files
+    cmd: |
+      sudo chmod -R 0775 .
+      sudo chown -R `whoami`:www-data .
+
+  # Drush commands
+  uli:
+    usage: Get one time login link
+    cmd: lando drush uli
+  cr:
+    usage: Clear cache
+    cmd: lando drush cr
+
+  # Configuration commands
+  cst:
+    usage: Gets config status
+    cmd: lando drush cst
+  cex:
+    usage: Exports configuration to code
+    cmd: lando drush cex -y

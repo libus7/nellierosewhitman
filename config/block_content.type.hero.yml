@@ -1,0 +1,8 @@
+uuid: 30010c98-1b9d-438b-b8b8-cd664bf2d392
+langcode: en
+status: true
+dependencies: {  }
+id: hero
+label: Hero
+revision: 0
+description: 'A hero is a primary banner at the top of most landing pages.'

@@ -1,0 +1,12 @@
+<p>{{ profile.bio }}</p>
+
+<h3>Friends List</h3>
+<div class="friends">
+  {% for username in profile.friends %}
+    <div class="friend">
+      <a href="/skeleton/sandbox?user={{ username }}">
+        {{ username }}
+      </a>
+    </div>
+  {% endfor %}
+</div>

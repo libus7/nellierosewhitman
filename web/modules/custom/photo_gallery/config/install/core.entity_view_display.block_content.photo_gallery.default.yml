@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.photo_gallery
+    - field.field.block_content.photo_gallery.body
+  module:
+    - text
+id: block_content.photo_gallery.default
+targetEntityType: block_content
+bundle: photo_gallery
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

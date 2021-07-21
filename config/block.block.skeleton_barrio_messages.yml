@@ -1,0 +1,22 @@
+uuid: 34118a6c-eb6b-4334-8a34-6e300a332d6b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - skeleton_barrio
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: skeleton_barrio_messages
+theme: skeleton_barrio
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

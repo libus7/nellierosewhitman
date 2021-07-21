@@ -1,0 +1,30 @@
+uuid: 514f81dc-25a6-4b5c-b7dc-a80a2b8850c7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:photo_gallery:bbfbac84-855c-45ea-a30f-9579637a617d'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_myphotos
+theme: bootstrap_barrio
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:bbfbac84-855c-45ea-a30f-9579637a617d'
+settings:
+  id: 'block_content:bbfbac84-855c-45ea-a30f-9579637a617d'
+  label: 'My Photos'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /some-page
+    negate: false

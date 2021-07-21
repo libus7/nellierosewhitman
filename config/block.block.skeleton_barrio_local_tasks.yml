@@ -1,0 +1,22 @@
+uuid: 35694edf-10c8-45f3-9338-ca164f11321d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - skeleton_barrio
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: skeleton_barrio_local_tasks
+theme: skeleton_barrio
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

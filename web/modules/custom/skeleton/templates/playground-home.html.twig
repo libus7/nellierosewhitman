@@ -1,0 +1,9 @@
+<ul>
+  {% for username, profile in profiles %}
+   <li>
+    <a href="/skeleton/sandbox?user={{ username }}">
+      {{ profile.first_name }} {{ profile.last_name }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>

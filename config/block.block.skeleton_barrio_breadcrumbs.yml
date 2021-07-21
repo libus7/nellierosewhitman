@@ -1,0 +1,20 @@
+uuid: ea14af50-fdd1-429f-a973-b2420913df22
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - skeleton_barrio
+id: skeleton_barrio_breadcrumbs
+theme: skeleton_barrio
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,9 @@
+name: 'Photo Gallery'
+description: 'Provides a photo gallery block type.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - block_content
+  - field
+  - text
+version: '1.0'

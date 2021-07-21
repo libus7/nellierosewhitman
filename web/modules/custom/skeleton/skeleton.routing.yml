@@ -1,0 +1,8 @@
+
+skeleton.playground_controller_sandbox:
+  path: '/skeleton/sandbox'
+  defaults:
+    _controller: '\Drupal\skeleton\Controller\PlaygroundController::sandbox'
+    _title: 'Playground'
+  requirements:
+    _permission: 'access content'

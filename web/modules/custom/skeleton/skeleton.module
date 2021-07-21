@@ -1,0 +1,56 @@
+<?php
+
+/**
+ * @file
+ * Contains skeleton.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_help().
+ */
+function skeleton_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the skeleton module.
+    case 'help.page.skeleton':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Skeleton custom functionality') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_coffee_commands().
+ */
+function skeleton_coffee_commands() {
+  $commands = [];
+  $commands[] = [
+    'value' => Url::fromRoute('skeleton.playground_controller_sandbox')->toString(),
+    'label' => 'Sandbox',
+    'command' => ':skeleton',
+  ];
+  return $commands;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function skeleton_theme($existing, $type, $theme, $path) {
+  return [
+    'playground_home' => [
+      'variables' => [
+        'profiles' => [],
+      ],
+    ],
+    'playground_profile' => [
+      'variables' => [
+        'profile' => [],
+      ],
+    ],
+  ];
+}

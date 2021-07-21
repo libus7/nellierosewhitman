@@ -1,0 +1,14 @@
+/**
+ * @file
+ * Subtheme specific CSS.
+ */
+
+.block-block-content .field--name-field-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.block-block-content .field--name-field-photos .field__item {
+  margin-right: 30px;
+}
